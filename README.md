@@ -27,3 +27,16 @@ ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888
 ros2 topic list 
 ```
 (here you should be able to see the topic /sensor_publisher)
+
+# Sensor data subscriber
+The published data can be viewed using the subscriber node
+1. Download the Subscriber_pkg file and unzip.
+2. Create a ROS2 workspace and move the two folders 'custom_message' , 'py_pubsub' into src folder of your workspace
+3. In the terminal run following: 
+```
+cd "your_ws"
+colcon build
+source install/setup.bash
+ros2 run py_pubsub py_pubsub
+```
+
